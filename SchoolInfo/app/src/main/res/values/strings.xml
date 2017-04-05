@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">КЭО Информер</string>
+    <string name="text_load_more">загрузка следующих...</string>
+    <string name="your_number">Ваш номер телефона</string>
+    <string name="get_code">Получить проверочный код</string>
+    <string name="message_no_internet">Отсутствует соединение с Интернетом!</string>
+    <string name="not_fill_fields">Заполните корректно поля для ввода</string>
+    <string name="tab_progress">Успеваемость</string>
+    <string name="tab_visit">Посещаемость</string>
+    <string name="tab_schedule">Расписание</string>
+    <string name="tab_settings">Настройки</string>
+    <string name="logout">Сброс авторизации</string>
+    <string name="code_confirm">Код подтверждения</string>
+    <string name="send_code_confirm">проверить код подтверждения</string>
+    <string name="incorrect_code">Некорректный код подтверждения</string>
+    <string name="kao">КЭО</string>
+    <string name="informer">Информер</string>
+    <string name="center">© Центр подготовки к ЕГЭ и ОГЭ \"КЭО\" 2017</string>
+    <string name="date_from">С указанной даты</string>
+    <string name="date_to">До указанной даты</string>
+    <string name="homework">Домашние задания</string>
+    <string name="results">Результаты тестирований</string>
+    <string name="message_auth">Вам необходимо пройти авторизацию!</string>
+    <string name="message_welcome">Добро пожаловать</string>
+    <string name="message_nodata">Нет данных за период</string>
+    <string name="message_nostudent">Отсутствуют ученики</string>
+    <string name="message_parse_error">"Ошибка при разборе"</string>
+
+    <string name="state_succ">Сдано</string>
+    <string name="state_fail">Не сдано</string>
+    <string name="attended_absent">Отсутствовал</string>
+    <string name="attended_present">Присутствовал</string>
+
+</resources>

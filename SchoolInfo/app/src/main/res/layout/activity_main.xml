@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/base_background_color"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/vp_horizontal_ntb"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/appBarLayout"
+                android:layout_below="@+id/imageView" />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/top"
+                android:scaleType="centerInside"
+                android:adjustViewBounds="true"/>
+
+            <android.support.design.widget.AppBarLayout
+                android:id="@+id/appBarLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:background="@color/colorPrimaryDark">
+
+                <FrameLayout
+                    android:id="@+id/wrapper_ntb_horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.gigamole.navigationtabbar.ntb.NavigationTabBar
+                        android:id="@+id/ntb_horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="?attr/actionBarSize"
+                        android:background="@color/colorPrimaryDark"
+                        app:ntb_title_size="10sp"
+                        app:ntb_bg_color="@color/colorPrimaryDark"
+                        app:ntb_badge_bg_color="#ff000000"
+                        app:ntb_badge_gravity="bottom"
+                        app:ntb_title_mode="active"
+                        app:ntb_titled="true"
+                        app:ntb_badge_position="right"
+                        app:ntb_badge_title_color="#ffffffff"
+                        />
+
+                </FrameLayout>
+
+            </android.support.design.widget.AppBarLayout>
+        </RelativeLayout>
+
+    </android.support.design.widget.CoordinatorLayout>
+</layout>

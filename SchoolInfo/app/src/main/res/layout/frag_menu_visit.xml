@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/base_background_color">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:id="@+id/panel"
+            android:layout_height="wrap_content">
+
+            <Switch
+                android:text="Показывать только пропущенные "
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/switch1"
+                android:padding="8dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_weight="3"
+                android:checked="false" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="8dp">
+
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/date_from"
+                        android:textColor="@color/base_label_color"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1"
+                        android:layout_gravity="center" />
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/date_from"
+                            android:padding="8dp"
+                            android:background="@drawable/textview_border"
+                            android:textColor="@color/colorPrimary"
+                            android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1"
+                            android:layout_weight="2"
+                            android:layout_gravity="center" />
+
+                        <ImageButton
+                            android:id="@+id/btn_from"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/bell"
+                            android:layout_weight="5"
+                            android:adjustViewBounds="true"
+                            android:scaleType="centerInside"
+                            android:layout_gravity="center"
+                            android:layout_margin="4dp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/date_to"
+                        android:textColor="@color/base_label_color"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1"
+                        android:layout_gravity="center" />
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/date_to"
+                            android:padding="8dp"
+                            android:background="@drawable/textview_border"
+                            android:textColor="@color/colorPrimary"
+                            android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1"
+                            android:layout_weight="2"
+                            android:layout_gravity="center" />
+
+                        <ImageButton
+                            android:id="@+id/btn_to"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/bell"
+                            android:layout_weight="5"
+                            android:adjustViewBounds="true"
+                            android:scaleType="centerInside"
+                            android:layout_gravity="center"
+                            android:layout_margin="4dp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/base_line_color"
+                />
+        </LinearLayout>
+
+
+        <com.malinskiy.superrecyclerview.SuperRecyclerView
+            android:id="@+id/list"
+            app:layout_empty="@layout/empty_recycler_view"
+            app:layout_moreProgress="@layout/load_recycler_view"
+            app:mainLayoutId="@layout/layout_recyclerview_verticalscroll"
+            app:recyclerClipToPadding="false"
+            app:scrollbarStyle="insideOverlay"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/panel">
+
+        </com.malinskiy.superrecyclerview.SuperRecyclerView>
+    </RelativeLayout>
+</layout>
