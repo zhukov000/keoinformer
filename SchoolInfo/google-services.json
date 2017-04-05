@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "420207936986",
+    "firebase_url": "https://advance-copilot-140521.firebaseio.com",
+    "project_id": "advance-copilot-140521",
+    "storage_bucket": "advance-copilot-140521.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:420207936986:android:00683f7e1eda966d",
+        "android_client_info": {
+          "package_name": "com.kolibru.schoolinfo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "420207936986-6jki17384hevj4v6shigi2ja5htkjqrp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD4CAuLsjw5Fiv5GlPYp336l3ml_GE5FT8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
