@@ -27,9 +27,6 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".activities.Auth"
-            android:screenOrientation="portrait" />
-        <activity
             android:name=".activities.MainActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
@@ -39,7 +36,21 @@
         <activity android:name=".activities.Exam" />
         <activity android:name=".activities.MenuExam" />
         <activity android:name=".activities.MenuHomework" />
-        <activity android:name=".activities.MenuVisit" />
+
+        <service
+            android:name=".KEOFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/logo" />
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/colorPrimary" />
     </application>
 
 </manifest>
